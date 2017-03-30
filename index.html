@@ -5,7 +5,10 @@ layout: default
   {% if post.noindex %}
   {% else %}
   <article>
-    {{ post.content }}
+    <div>
+        {{ post.excerpt }}
+    </div>
+    <a href="{{ post.url }}" itemprop="url">continue...</a>
   </article>
   {% endif %}
 {% endfor %}
