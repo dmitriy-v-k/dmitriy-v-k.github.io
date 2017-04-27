@@ -1,4 +1,4 @@
-theme: self-theme
+theme: jekyll-theme-minimal
 paginate: 10
 paginate_path: "/page/:num/"
 excerpt_separator: <!--continue-->
