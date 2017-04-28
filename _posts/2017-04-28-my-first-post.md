@@ -10,5 +10,3 @@ called [CSimplest]: https://github.com/dmitriy-v-k/dmitriy-v-k.github.io "CSimpl
 In blog's pages I'll try write my things about OOP and my framework. 
 
 I hope you will be interested!
-
-<!--continue-->
