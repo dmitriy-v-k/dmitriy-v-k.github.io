@@ -5,7 +5,11 @@ layout: default
   {% if post.noindex %}
   {% else %}
   <article>
-    <div>
+    <h1>{{ post.title }}</h1>
+    <div class="post-time">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%d-m-y" }}</time>
+    </div>
+    <div class="post-preview">
         {{ post.excerpt }}
     </div>
     <a href="{{ post.url }}" itemprop="url">continue...</a>
