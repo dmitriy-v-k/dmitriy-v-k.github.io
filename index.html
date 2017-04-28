@@ -7,7 +7,7 @@ layout: default
   <article>
     <h1>{{ post.title }}</h1>
     <div class="post-time">
-      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: "%-d %B %Y" }}</time>
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ post.date | date: "%-d %B %Y" }}</time>
     </div>
     <div class="post-preview">
         {{ post.excerpt }}
