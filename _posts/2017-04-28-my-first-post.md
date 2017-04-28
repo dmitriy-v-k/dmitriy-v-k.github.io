@@ -2,6 +2,7 @@
 layout: default
 title: "My first post"
 date: 2017-04-28
+no-continue: true
 ---
 
 Hi All! It's my first post in my new blog. 
