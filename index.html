@@ -12,7 +12,7 @@ layout: default
     <div class="post-preview">
         {{ post.excerpt }}
     </div>
-    {% if post.no-continue %}
+    {% if page.no-continue %}
     {% else %}
       <a href="{{ post.url }}">continue...</a>
     {% endif %}
