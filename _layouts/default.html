@@ -10,21 +10,27 @@
 
     <meta name="viewport" content="width=device-width,minimum-scale=1,initial-scale=1">
     <link rel="stylesheet" href="{{ '/asserts/main.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ '/asserts/css/blog.css' | relative_url }}">
   </head>
   <body>
     <div class="wrapper">
-      <header>
-        <h1>{{ site.title | default: "Blog about computers and programming" }}</h1>
-        <p>{{ site.description | default: 'Dmitriy Konovalov is writing about object-oriented programming, C#, programming philosophy' }}</p>
-        <p class="view"><a href="{{ site.github.owner_url }}">View My GitHub Profile</a></p>
+      <header class="main-header">
+        <img class="photo" alt="Dmitriy Konovalov aka {{ site.github.owner_name }}" src="/images/photo.jpg" >
+        <ul class="profiles">
+          <li class="profile-item"><a class="hide-text icon-twitter" href="https://twitter.com/dmitriy_v_k"><span>twitter</span></a></li>
+          <li class="profile-item"><a class="hide-text icon-github-circled" href="http://stackoverflow.com/users/7629189/dmitriy-konovalov"><span>stackoverflow</span></a></li>
+          <li class="profile-item"><a class="hide-text icon-stackoverflow" href="https://github.com/dmitriy-v-k"><span>github</span></a></li>
+        </ul>
+        <nav class="menu">
+          <a href="/index.html">Home</a>
+          <a href="/about-me.html">About</a>
+        </nav>
       </header>
-      <section>
-
-      {{ content }}
-
+      <section class="main-content">
+        {{ content }}
       </section>
       <footer>
-        <p><small>Hosted on GitHub Pages</small></p>
+        <small><a href="https://pages.github.com/">Hosted on GitHub Pages</a></small>
       </footer>
     </div>
   </body>

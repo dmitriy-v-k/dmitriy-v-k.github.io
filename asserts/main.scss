@@ -1,8 +1,85 @@
----
----
+$footer-height: 1.5rem;
 
-.test {
-    .test {
-        color: green;
+$link-color: #3498DB;
+$link-color-visited: #3A539B;
+
+$serif-fonts: Cambria, "Hoefler Text", Utopia, "Liberation Serif", "Nimbus Roman No9 L Regular", Times, "Times New Roman", serif;
+$sans-serif-fonts: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+
+.hide-text {
+    &>span {
+        display: none;
+    }
+}
+
+html {
+    height: 100%;
+}
+body {
+    font-family: $serif-fonts;
+    height: 100%;
+    margin: 0;
+}
+footer {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align: right;
+    height: $footer-height;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    &:link {
+        color: $link-color;
+    }
+    &:visited {
+        color: $link-color-visited;
+    }
+    &:hover {
+        color: darken( $link-color, 15% );
+    }
+    &:active {
+        color: lighten( $link-color, 15% );
+    }
+}
+
+.wrapper {
+    width: 700px;
+    margin: 0 auto;
+    height: 100%;
+    position: relative;
+    padding-bottom: $footer-height;
+    padding-top: .5rem;
+    box-sizing: border-box;
+    .main-header {
+        font-family: $sans-serif-fonts;
+        .photo {
+            width: 100px;
+            height: 100px;
+            border-radius: 50px;
+        }
+        .profiles {
+            display: inline-block;
+            vertical-align: top;
+            margin: 0;
+            padding: 0;
+            .profile-item {
+                display: inline-block;
+                font-size: 2rem;
+                a {
+                    text-decoration: none;
+                    color: black;
+                    &:hover {
+                        color: $link-color;
+                    }
+                }
+            }
+        }
+        .menu {
+            text-align: right;
+        }
     }
 }

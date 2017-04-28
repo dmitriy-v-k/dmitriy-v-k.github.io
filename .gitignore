@@ -1,0 +1,5 @@
+.vscode/*
+
+_layouts/*.preview.html
+asserts/main.css
+asserts/main.css.map
