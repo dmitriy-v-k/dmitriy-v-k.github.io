@@ -1,5 +1,8 @@
-.vscode/*
-
 _layouts/*.preview.html
+.sass-cache/*
+
 asserts/main.css
 asserts/main.css.map
+
+asserts/default.css
+asserts/default.css.map

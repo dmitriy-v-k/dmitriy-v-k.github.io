@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: post
 title: "My first post"
 date: 2017-04-28
 no-continue: true
