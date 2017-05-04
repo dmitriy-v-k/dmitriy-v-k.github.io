@@ -11,7 +11,7 @@ called [CSimplest](https://github.com/dmitriy-v-k/dmitriy-v-k.github.io "Simples
 In blog's pages I'll try write my things about OOP and my framework. 
 
 Small exsample:
-`var paramsRq = new RqWithResponse(
+```var paramsRq = new RqWithResponse(
     new RqIIS(Request),
     new RsWithHeaders(
         new RsParametric((parameters) => 
@@ -29,6 +29,6 @@ Small exsample:
             new KeyValuePair<string, string>("test","test")
         }
     )
-);`
+);```
 
 I hope you will be interested!
