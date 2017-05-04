@@ -11,24 +11,25 @@ called [CSimplest](https://github.com/dmitriy-v-k/dmitriy-v-k.github.io "Simples
 In blog's pages I'll try write my things about OOP and my framework. 
 
 Small exsample:
-```var paramsRq = new RqWithResponse(
-    new RqIIS(Request),
-    new RsWithHeaders(
-        new RsParametric((parameters) => 
-            new RsJson(
-                new RsIIS(Response),
-                new Users().FindById(parameters["name"])
+
+    var paramsRq = new RqWithResponse(
+        new RqIIS(Request),
+        new RsWithHeaders(
+            new RsParametric((parameters) => 
+                new RsJson(
+                    new RsIIS(Response),
+                    new Users().FindById(parameters["name"])
+                ),
+                new RqWithParamsInPath(
+                    new RqIIS(Request),
+                    new Regex(@"~/params/(?<name>\w+)/(?<secondName>\w+)")
+                ).Parameters()
             ),
-            new RqWithParamsInPath(
-                new RqIIS(Request),
-                new Regex(@"~/params/(?<name>\w+)/(?<secondName>\w+)")
-            ).Parameters()
-        ),
-        new List<KeyValuePair<string, string>>()
-        {
-            new KeyValuePair<string, string>("test","test")
-        }
-    )
-);```
+            new List<KeyValuePair<string, string>>()
+            {
+                new KeyValuePair<string, string>("test","test")
+            }
+        )
+    );
 
 I hope you will be interested!
