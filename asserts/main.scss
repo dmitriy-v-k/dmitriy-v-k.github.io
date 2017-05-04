@@ -3,8 +3,6 @@
 
 $text-color: #000;
 
-$footer-height: 1.5rem;
-
 $link-color: #3498DB;
 $link-color-visited: #3A539B;
 
@@ -30,14 +28,7 @@ body {
 }
 
 footer {
-    position: absolute;
-    left: 0;
-    right: 0;
-    bottom: 0;
     text-align: right;
-    height: $footer-height;
-    margin: 0;
-    padding: 0;
 }
 
 a {
@@ -104,8 +95,6 @@ code {
     width: 700px;
     margin: 0 auto;
     height: 100%;
-    position: relative;
-    padding-bottom: $footer-height;
     padding-top: .5rem;
     box-sizing: border-box;
     .main-header {
